@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>LeetCode's Tree Visualiser</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .inputContainer{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 10rem;
+        }
+
+        textarea{
+            resize: none;
+            width: 100%;
+        }
+
+        .actionBtns{
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+        }
+
+        button{
+            width: 5rem;
+            height: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="inputContainer">
+        <textarea rows="5" class="input"></textarea>
+        <div class="actionBtns">
+            <button class="applyBtn">Apply</button>
+            <button class="resetBtn">Reset</button>
+        </div>
+    </div>
+    <canvas></canvas>
+    <script type="module" src="js/drawBinaryTree.js"></script>
+</body>
+</html>
